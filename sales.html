@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houseboats for Sale | Waterfront Properties</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Houseboat Haven</a>
+            <div class="space-x-6">
+                <a href="/rentals" class="hover:text-blue-200">Rentals</a>
+                <a href="/sales" class="hover:text-blue-200 font-semibold">For Sale</a>
+                <a href="/about" class="hover:text-blue-200">About</a>
+                <a href="/contact" class="hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Properties Header -->
+    <section class="bg-blue-100 py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-4">Houseboats For Sale</h1>
+            <p class="text-lg mb-6">Find your dream waterfront home among our selection of unique floating properties.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Location</label>
+                        <select class="w-full p-2 border rounded">
+                            <option>Any Location</option>
+                            <option>Amsterdam</option>
+                            <option>Seattle</option>
+                            <option>Toronto</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Price Range</label>
+                        <select class="w-full p-2 border rounded">
+                            <option>Any Price</option>
+                            <option>$100k - $300k</option>
+                            <option>$300k - $500k</option>
+                            <option>$500k+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Bedrooms</label>
+                        <select class="w-full p-2 border rounded">
+                            <option>Any</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded w-full">
+                            Search Properties
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Property Item -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1499793983690-29b61292ff3a" alt="Houseboat for Sale" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">New Listing</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Modern Floating Villa</h3>
+                        <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>Seattle, USA</p>
+                        <div class="mb-4">
+                            <div class="flex space-x-4 text-gray-700">
+                                <span><i class="fas fa-bed mr-1"></i> 3 beds</span>
+                                <span><i class="fas fa-bath mr-1"></i> 2 baths</span>
+                                <span><i class="fas fa-ruler-combined mr-1"></i> 1,200 sq ft</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-t pt-3">
+                            <span class="text-lg font-bold text-blue-800">$475,000</span>
+                            <a href="/sales/1" class="text-blue-600 hover:text-blue-800">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More property items would go here -->
+            </div>
+
+            <div class="mt-12 flex justify-center">
+                <nav class="inline-flex rounded-md shadow">
+                    <a href="#" class="px-4 py-2 rounded-l-md border border-gray-300 bg-blue-600 text-white">1</a>
+                    <a href="#" class="px-4 py-2 border-t border-b border-gray-300 hover:bg-gray-50">2</a>
+                    <a href="#" class="px-4 py-2 border-t border-b border-gray-300 hover:bg-gray-50">3</a>
+                    <a href="#" class="px-4 py-2 rounded-r-md border border-gray-300 hover:bg-gray-50">Next →</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-800 text-white py-12 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Interested in Selling Your Houseboat?</h2>
+            <p class="mb-8 max-w-2xl mx-auto">Our experienced team can help you evaluate your property and get the best possible price in today's market.</p>
+            <a href="/contact" class="inline-block bg-white hover:bg-gray-100 text-blue-900 px-8 py-3 rounded-lg font-medium">
+                Contact Us About Selling
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Houseboat Haven</h3>
+                    <p>Providing unique waterfront living experiences since 2010.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-blue-200">Home</a></li>
+                        <li><a href="/rentals" class="hover:text-blue-200">Rentals</a></li>
+                        <li><a href="/sales" class="hover:text-blue-200">Properties</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about" class="hover:text-blue-200">About Us</a></li>
+                        <li><a href="/blog" class="hover:text-blue-200">Blog</a></li>
+                        <li><a href="/contact" class="hover:text-blue-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="mt-6">info@houseboathaven.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Houseboat Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
