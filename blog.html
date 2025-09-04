@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Houseboat Haven</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Houseboat Haven</a>
+            <div class="space-x-6">
+                <a href="/rentals.html" class="hover:text-blue-200">Rentals</a>
+                <a href="/sales.html" class="hover:text-blue-200">For Sale</a>
+                <a href="/about.html" class="hover:text-blue-200">About</a>
+                <a href="/contact.html" class="hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero text-white flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">Houseboat Living Blog</h1>
+            <p class="text-xl">Tips, stories, and insights from the waterfront lifestyle</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Blog Posts -->
+                <div class="md:col-span-2">
+                    <!-- Featured Post -->
+                    <article class="mb-8 bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070" alt="Featured Blog Post" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Featured</span>
+                            <h2 class="text-2xl font-bold mt-3 mb-3">
+                                <a href="#" class="hover:text-blue-600">10 Essential Tips for First-Time Houseboat Owners</a>
+                            </h2>
+                            <p class="text-gray-700 mb-4">
+                                Thinking about buying your first houseboat? From maintenance basics to marina selection, here's everything you need to know before taking the plunge into waterfront living.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="h-10 w-10 rounded-full bg-gray-300 mr-3"></div>
+                                    <div>
+                                        <p class="font-semibold text-sm">John Smith</p>
+                                        <p class="text-gray-500 text-xs">November 15, 2023</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Recent Posts Grid -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <article class="bg-white rounded-lg overflow-hidden shadow">
+                            <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070" alt="Blog Post" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <span class="text-blue-600 text-xs">LIFESTYLE</span>
+                                <h3 class="text-lg font-semibold mt-2 mb-2">
+                                    <a href="#" class="hover:text-blue-600">Living on Water: A Day in the Life</a>
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">Experience what a typical day looks like when your home floats on water...</p>
+                                <p class="text-gray-500 text-xs">November 10, 2023</p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg overflow-hidden shadow">
+                            <img src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?q=80&w=2070" alt="Blog Post" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <span class="text-blue-600 text-xs">DESTINATIONS</span>
+                                <h3 class="text-lg font-semibold mt-2 mb-2">
+                                    <a href="#" class="hover:text-blue-600">Best Houseboat Destinations in Europe</a>
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">From Amsterdam's canals to Norway's fjords, discover the best places...</p>
+                                <p class="text-gray-500 text-xs">November 5, 2023</p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg overflow-hidden shadow">
+                            <img src="https://images.unsplash.com/photo-1519452575417-564c1401ecc0?q=80&w=2070" alt="Blog Post" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <span class="text-blue-600 text-xs">MAINTENANCE</span>
+                                <h3 class="text-lg font-semibold mt-2 mb-2">
+                                    <a href="#" class="hover:text-blue-600">Winterizing Your Houseboat: Complete Guide</a>
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">Protect your investment during cold months with our comprehensive guide...</p>
+                                <p class="text-gray-500 text-xs">October 28, 2023</p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg overflow-hidden shadow">
+                            <img src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?q=80&w=2070" alt="Blog Post" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <span class="text-blue-600 text-xs">BUYING GUIDE</span>
+                                <h3 class="text-lg font-semibold mt-2 mb-2">
+                                    <a href="#" class="hover:text-blue-600">Houseboat vs Traditional Home: Cost Analysis</a>
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">A detailed breakdown of costs comparing waterfront living options...</p>
+                                <p class="text-gray-500 text-xs">October 20, 2023</p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg overflow-hidden shadow">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070" alt="Blog Post" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <span class="text-blue-600 text-xs">COMMUNITY</span>
+                                <h3 class="text-lg font-semibold mt-2 mb-2">
+                                    <a href="#" class="hover:text-blue-600">Marina Communities: Finding Your Tribe</a>
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">The social aspects of houseboat living and building connections...</p>
+                                <p class="text-gray-500 text-xs">October 15, 2023</p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white rounded-lg overflow-hidden shadow">
+                            <img src="https://images.unsplash.com/photo-1512521743077-a42eeaaa963c?q=80&w=2070" alt="Blog Post" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <span class="text-blue-600 text-xs">SUSTAINABILITY</span>
+                                <h3 class="text-lg font-semibold mt-2 mb-2">
+                                    <a href="#" class="hover:text-blue-600">Eco-Friendly Houseboat Living</a>
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">Solar panels, water recycling, and sustainable practices on the water...</p>
+                                <p class="text-gray-500 text-xs">October 10, 2023</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex justify-center mt-12">
+                        <nav class="flex space-x-2">
+                            <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">1</a>
+                            <a href="#" class="px-4 py-2 bg-white border border-gray-300 rounded hover:bg-gray-50">2</a>
+                            <a href="#" class="px-4 py-2 bg-white border border-gray-300 rounded hover:bg-gray-50">3</a>
+                            <a href="#" class="px-4 py-2 bg-white border border-gray-300 rounded hover:bg-gray-50">Next →</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="md:col-span-1">
+                    <!-- Search -->
+                    <div class="bg-white p-6 rounded-lg shadow mb-6">
+                        <h3 class="text-lg font-semibold mb-4">Search Blog</h3>
+                        <div class="relative">
+                            <input type="text" placeholder="Search articles..." 
+                                   class="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <button class="absolute right-3 top-2.5 text-gray-400 hover:text-gray-600">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="bg-white p-6 rounded-lg shadow mb-6">
+                        <h3 class="text-lg font-semibold mb-4">Categories</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-700 hover:text-blue-600 flex justify-between">
+                                <span>Lifestyle</span>
+                                <span class="text-gray-400">(12)</span>
+                            </a></li>
+                            <li><a href="#" class="text-gray-700 hover:text-blue-600 flex justify-between">
+                                <span>Buying Guide</span>
+                                <span class="text-gray-400">(8)</span>
+                            </a></li>
+                            <li><a href="#" class="text-gray-700 hover:text-blue-600 flex justify-between">
+                                <span>Maintenance</span>
+                                <span class="text-gray-400">(15)</span>
+                            </a></li>
+                            <li><a href="#" class="text-gray-700 hover:text-blue-600 flex justify-between">
+                                <span>Destinations</span>
+                                <span class="text-gray-400">(10)</span>
+                            </a></li>
+                            <li><a href="#" class="text-gray-700 hover:text-blue-600 flex justify-between">
+                                <span>Community</span>
+                                <span class="text-gray-400">(6)</span>
+                            </a></li>
+                            <li><a href="#" class="text-gray-700 hover:text-blue-600 flex justify-between">
+                                <span>Sustainability</span>
+                                <span class="text-gray-400">(4)</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="bg-white p-6 rounded-lg shadow mb-6">
+                        <h3 class="text-lg font-semibold mb-4">Popular Posts</h3>
+                        <div class="space-y-4">
+                            <div class="flex space-x-3">
+                                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=100" alt="Popular post" class="w-16 h-16 object-cover rounded">
+                                <div class="flex-1">
+                                    <h4 class="text-sm font-medium hover:text-blue-600">
+                                        <a href="#">5 Things Nobody Tells You About Houseboat Living</a>
+                                    </h4>
+                                    <p class="text-xs text-gray-500 mt-1">2,543 views</p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-3">
+                                <img src="https://images.unsplash.com/photo-1499793983690-29b61292ff3a?q=80&w=100" alt="Popular post" class="w-16 h-16 object-cover rounded">
+                                <div class="flex-1">
+                                    <h4 class="text-sm font-medium hover:text-blue-600">
+                                        <a href="#">Best Houseboat Insurance Providers 2023</a>
+                                    </h4>
+                                    <p class="text-xs text-gray-500 mt-1">1,892 views</p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-3">
+                                <img src="https://images.unsplash.com/photo-1551524164-687a55dd1126?q=80&w=100" alt="Popular post" class="w-16 h-16 object-cover rounded">
+                                <div class="flex-1">
+                                    <h4 class="text-sm font-medium hover:text-blue-600">
+                                        <a href="#">Marina Etiquette: Do's and Don'ts</a>
+                                    </h4>
+                                    <p class="text-xs text-gray-500 mt-1">1,654 views</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="bg-blue-900 text-white p-6 rounded-lg shadow mb-6">
+                        <h3 class="text-lg font-semibold mb-2">Newsletter</h3>
+                        <p class="text-sm mb-4">Get the latest articles and updates delivered to your inbox.</p>
+                        <input type="email" placeholder="Your email" 
+                               class="w-full px-4 py-2 rounded text-gray-900 focus:outline-none mb-3">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-medium">
+                            Subscribe
+                        </button>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold mb-4">Tags</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="#" class="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-700 px-3 py-1 rounded-full text-sm">Amsterdam</a>
+                            <a href="#" class="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-700 px-3 py-1 rounded-full text-sm">Seattle</a>
+                            <a href="#" class="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-700 px-3 py-1 rounded-full text-sm">Maintenance</a>
+                            <a href="#" class="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-700 px-3 py-1 rounded-full text-sm">Insurance</a>
+                            <a href="#" class="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-700 px-3 py-1 rounded-full text-sm">Marina Life</a>
+                            <a href="#" class="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-700 px-3 py-1 rounded-full text-sm">Solar Power</a>
+                            <a href="#" class="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-700 px-3 py-1 rounded-full text-sm">Buying Tips</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Houseboat Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Whether you're looking to rent or buy, we have the perfect floating home waiting for you.</p>
+            <div class="flex justify-center gap-4">
+                <a href="/rentals.html" class="bg-white hover:bg-gray-100 text-blue-900 px-8 py-4 rounded-lg font-medium text-lg">Browse Rentals</a>
+                <a href="/sales.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium text-lg">View Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12 border-t border-blue-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Houseboat Haven</h3>
+                    <p>Providing unique waterfront living experiences since 2010.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-blue-200">Home</a></li>
+                        <li><a href="/rentals.html" class="hover:text-blue-200">Rentals</a></li>
+                        <li><a href="/sales.html" class="hover:text-blue-200">Properties</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="hover:text-blue-200">About Us</a></li>
+                        <li><a href="/blog.html" class="hover:text-blue-200">Blog</a></li>
+                        <li><a href="/contact.html" class="hover:text-blue-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="mt-6">info@houseboathaven.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Houseboat Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
